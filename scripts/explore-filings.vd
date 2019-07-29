@@ -1,0 +1,23 @@
+sheet	col	row	longname	input	keystrokes	comment
+			open-file	fetched/filings.csv	o	
+			open-file	data/candidates.csv	o	
+candidates	Candidate ID		hide-col		-	
+candidates	FEC Old		hide-col		-	
+candidates	FEC New		hide-col		-	
+candidates	Itemizer		hide-col		-	
+candidates	ElectionBot		hide-col		-	
+candidates	Campaign Website		hide-col		-	
+candidates	Personal Twitter		hide-col		-	
+candidates	Committee ID		key-col		!	
+candidates			sheets		S	
+sheets		キfilings	open-row		^J	
+filings	committee_id		key-col		!	
+filings	date_filed		sort-desc		]	
+filings			sheets		S	
+sheets		キcandidates	slide-up		K	
+sheets		キcandidates	select-row		s	
+sheets		キfilings	select-row		s	
+sheets			join-sheets	outer	&	
+candidates+filings	date_filed		sort-desc		]	
+candidates+filings			select-expr	date_filed >= "2019-04-08"	z|	
+candidates+filings			dup-selected		"	

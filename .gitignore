@@ -1,0 +1,6 @@
+.DS_Store
+.ipynb_checkpoints
+notebooks/notes.ipynb
+notebooks/geo-analysis.ipynb
+data/filings
+output/*.csv

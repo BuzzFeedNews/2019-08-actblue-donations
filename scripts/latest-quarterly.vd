@@ -1,0 +1,44 @@
+sheet	col	row	longname	input	keystrokes	comment
+			open-file	fetched/filings.csv	o	
+			open-file	data/candidates.csv	o	
+candidates	Party		hide-col		-	
+candidates	Sex		hide-col		-	
+candidates	Minority		hide-col		-	
+candidates	Committee Name		hide-col		-	
+candidates	Candidate ID		hide-col		-	
+candidates	FEC Old		hide-col		-	
+candidates	FEC New		hide-col		-	
+candidates	Itemizer		hide-col		-	
+candidates	ElectionBot		hide-col		-	
+candidates	Campaign Website		hide-col		-	
+candidates	Personal Twitter		hide-col		-	
+candidates	Committee ID		key-col		!	
+candidates			sheets		S	
+sheets		キfilings	open-row		^J	
+filings	date_coverage_to		select-col-regex	2019-03-31	|	
+filings			dup-selected		"	
+filings_selectedref	cycle		hide-col		-	
+filings_selectedref	form_type		hide-col		-	
+filings_selectedref	date_filed		hide-col		-	
+filings_selectedref	date_coverage_to		hide-col		-	
+filings_selectedref	date_coverage_from		hide-col		-	
+filings_selectedref	report_period		hide-col		-	
+filings_selectedref	paper		hide-col		-	
+filings_selectedref	amended_uri		hide-col		-	
+filings_selectedref	is_amendment		hide-col		-	
+filings_selectedref	original_filing		hide-col		-	
+filings_selectedref	original_uri		hide-col		-	
+filings_selectedref	committee_type		hide-col		-	
+filings_selectedref	contributions_total		hide-col		-	
+filings_selectedref	cash_on_hand		hide-col		-	
+filings_selectedref	disbursements_total		hide-col		-	
+filings_selectedref	receipts_total		hide-col		-	
+filings_selectedref	committee_id		key-col		!	
+filings_selectedref			rename-sheet	last_quarter	rename-sheet	
+last_quarter			sheets		S	
+sheets		キlast_quarter	select-row		s	
+sheets		キcandidates	select-row		s	
+sheets		キcandidates	slide-up		K	
+sheets		キcandidates	slide-up		K	
+sheets			join-sheets	outer	&	
+candidates+last_quarter	Committee ID		sort-asc		[	
