@@ -1,4 +1,4 @@
-# Analysis of contributions to 2020 presidential candidates via ActBlue 7/31/2019
+# Analysis of contributions to 2020 presidential candidates via ActBlue as of 7/31/2019
 
 This repository contains data and code supporting a [BuzzFeed News article examining donors](TK) on campaign finance. Published August TK, 2019. See below for details.
 
