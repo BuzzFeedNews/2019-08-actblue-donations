@@ -8,16 +8,14 @@ All data in this repository comes from the campaigns' committee filings to the [
 
 - [`data/census/zcta_county.csv`](data/census/zcta_county.csv) is a crosswalk that bridges ZIP codes and counties. It is provided by [The U.S. Census](https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.html) 
 
-- [`data/census/TK`](data/census/TK/) is a shapefile representing Zip Code Tabulation Areas from the [U.S. Census](https://www.census.gov/cgi-bin/geo/shapefiles/). https://www2.census.gov/geo/tiger/TIGER2010/ZCTA5/2010/
+- [`data/census/tl_2010_us_zcta510/`](data/census/tl_2010_us_zcta510/) is a shapefile representing Zip Code Tabulation Areas from the [U.S. Census](https://www.census.gov/cgi-bin/geo/shapefiles/).
 
 - [`data/candidates.csv`](data/candidates.csv) contains a list of high- and medium-profile Democratic presidential candidates (and primary campaign committees) for whom an "July Quarterly" filing was available on the FEC's website by 6:30am Eastern on July 16, 2019. (The filing deadline was July 15 at midnight.)
 
 - [`data/filings.csv`](data/filings.csv) contains a list of basic metadata for the aforementioned filings.
 
 - The [`data/filings/`](data/filings/) directory contains the raw filing data for each of those filings, in the FEC's `.fec` format.
-   
-- [`data/census`](`data/census`) contains population estimates for U.S. statesand counties using the 5-year American Community Survey from the Census Bureau.
-   
+    
 - [`data/states-geojson.json`](`data/states-geojson.json`) is a geojson file of the U.S. states including Alaska and Hawaii. It is generated using [this code](https://github.com/scottpham/us-atlas-geojson).
 
 - [`data/census/tl_2018_us_state`](`data/census/tl_2018_us_state`) is a geojson file of the U.S. states used directly from the Census Bureau. 
@@ -53,7 +51,8 @@ The FEC prohibits individual donors from giving more than $2,800 to any single c
 The [`notebooks/analyze-contributions.ipynb`](notebooks/analyze-contributions.ipynb) notebook contains the main analysis, written in Python. Relevant outputs can be found there, as well as in the [`output/`](output/) directory.
 
 The [`notebooks/geo-analysis.ipynb`](notebooks/geo-analysis.ipynb) notebook contains geographic analysis and exploratory charts. 
-## Outputs
+
+## Output
 
 The [`output/`](output/) directory contains two files that may be of interest to other journalists and researchers:
 
@@ -70,6 +69,7 @@ The code running the analysis is written in Python 3, and requires the following
 - [fecfile](https://esonderegger.github.io/fecfile/) for parsing the raw FEC filings
 - [jupyter](https://jupyter.org/) to run the notebook infrastructure
 - [geopandas](http://geopandas.org/) to run the geo notebook
+- [us](https://pypi.org/project/us/) to run the geo notebook
 
 If you use Pipenv, you can install all required libraries with `pipenv install`.
 
