@@ -18,7 +18,7 @@ All data in this repository comes from the campaigns' committee filings to the [
     
 - [`data/states-geojson.json`](`data/states-geojson.json`) is a geojson file of the U.S. states including Alaska and Hawaii. It is generated using [this code](https://github.com/scottpham/us-atlas-geojson).
 
-- [`data/census/tl_2018_us_state`](`data/census/tl_2018_us_state`) is a geojson file of the U.S. states used directly from the Census Bureau. 
+- [`data/census/tl_2018_us_state`](`data/census/tl_2018_us_state`) is a geojson file of the U.S. states from the U.S. Census. 
 
 ## Methodology
 
