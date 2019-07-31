@@ -4,3 +4,6 @@ notebooks/notes.ipynb
 notebooks/geo-analysis.ipynb
 data/filings
 output/*.csv
+data/census/tl*
+
+

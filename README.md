@@ -6,7 +6,9 @@ This repository contains data and code supporting a [BuzzFeed News article exami
 
 All data in this repository comes from the campaigns' committee filings to the [Federal Election Commission](https://www.fec.gov/) (FEC), with assistance from [ProPublica's Campaign Finance API](https://projects.propublica.org/api-docs/campaign-finance/committees/#get-committee-filings).
 
-- [`data/census/zcta_county.csv`](data/census/zcta_county.csv) is a crosswalk that bridges ZIP codes and counties. It is provided by [The US Census](https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.html) 
+- [`data/census/zcta_county.csv`](data/census/zcta_county.csv) is a crosswalk that bridges ZIP codes and counties. It is provided by [The U.S. Census](https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.html) 
+
+- [`data/census/TK`](data/census/TK/) is a shapefile representing Zip Code Tabulation Areas from the [U.S. Census](https://www.census.gov/cgi-bin/geo/shapefiles/). https://www2.census.gov/geo/tiger/TIGER2010/ZCTA5/2010/
 
 - [`data/candidates.csv`](data/candidates.csv) contains a list of high- and medium-profile Democratic presidential candidates (and primary campaign committees) for whom an "July Quarterly" filing was available on the FEC's website by 6:30am Eastern on July 16, 2019. (The filing deadline was July 15 at midnight.)
 
@@ -18,6 +20,7 @@ All data in this repository comes from the campaigns' committee filings to the [
    
 - [`data/states-geojson.json`](`data/states-geojson.json`) is a geojson file of the U.S. states including Alaska and Hawaii. It is generated using [this code](https://github.com/scottpham/us-atlas-geojson).
 
+- [`data/census/tl_2018_us_state`](`data/census/tl_2018_us_state`) is a geojson file of the U.S. states used directly from the Census Bureau. 
 
 ## Methodology
 
