@@ -1,0 +1,8 @@
+.DS_Store
+.ipynb_checkpoints
+notebooks/notes.ipynb
+data/filings
+output/all_actblue.csv
+output/clean_actblue.csv
+output/latest_contribs.csv
+
