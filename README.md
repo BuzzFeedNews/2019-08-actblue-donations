@@ -1,6 +1,6 @@
 # Analysis of ActBlue contributions to presidential candidates, January-June 2020
 
-This repository contains data and code supporting a [BuzzFeed News article examining donors](TK) on campaign finance. Published August 3, 2019. See below for details.
+This repository contains data and code supporting a [BuzzFeed News article examining donors](https://www.buzzfeednews.com/article/katherinemiller/elizabeth-warren-actblue-data-bernie-sanders-kamala-harris) on campaign finance. Published August 3, 2019. See below for details.
 
 ## Data
 
@@ -67,4 +67,3 @@ All code in this repository is available under the [MIT License](https://opensou
 Contact Scott Pham at [scott.pham@buzzfeed.com](mailto:scott.pham@buzzfeed.com).
 
 Looking for more from BuzzFeed News? [Click here for a list of our open-sourced projects, data, and code.](https://github.com/BuzzFeedNews/everything)
-
